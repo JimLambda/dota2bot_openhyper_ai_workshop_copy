@@ -26,10 +26,10 @@ local function a(b)
             )
         end
         if l and k and k.Enable then
-            d = k.AbilityUpgrade
-            e = b.GetTalentBuildList(k.Talent)
-            f = k.PurchaseList
-            g = k.SellList
+            if k.AbilityUpgrade ~= nil then d = k.AbilityUpgrade end
+            if k.Talent ~= nil then e = b.GetTalentBuildList(k.Talent) end
+            if k.PurchaseList ~= nil then f = k.PurchaseList end
+            if k.SellList ~= nil then g = k.SellList end
         end
         return d, e, f, g
     end
