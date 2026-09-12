@@ -1,0 +1,1 @@
+local a={}function a.sub(b,c)return b-c end;function a.add(b,c)return b+c end;function a.multiply(b,c)return b*c end;function a.dot(b,c)return b.x*c.x+b.y*c.y+b.z*c.z end;function a.length2D(b)return math.sqrt(b.x*b.x+b.y*b.y)end;function a.length3D(d)return math.sqrt(d.x*d.x+d.y*d.y+d.z*d.z)end;return a

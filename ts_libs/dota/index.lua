@@ -1,0 +1,1 @@
+local a={}do local b=require(GetScriptDirectory().."/ts_libs/dota/interfaces")for c,d in pairs(b)do if c~="default"then a[c]=d end end end;do local b=require(GetScriptDirectory().."/ts_libs/dota/enums")for c,d in pairs(b)do if c~="default"then a[c]=d end end end;return a

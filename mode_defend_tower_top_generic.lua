@@ -1,0 +1,1 @@
+local a=require(GetScriptDirectory()..'/FuncLib/systems/defend')local b=GetBot()function GetDesire()if ShouldSkipBotThink(b)then return 0 end;return a.GetDefendDesire(b,LANE_TOP)end;if SafeCall then local c=GetDesire;local d=Think;if c then GetDesire=SafeCall(c,0,'DEFEND_TOWER_TOP_GetDesire')end;if d then Think=SafeCall(d,nil,'DEFEND_TOWER_TOP_Think')end end
