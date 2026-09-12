@@ -45,13 +45,45 @@ Customize.Ban = {
 6. Check Appendix to ensure you DO NOT pick more than 1 "weak" heroes in a team for your game experience.
 --]]
 Customize.Radiant_Heros = {
-    'Random',
-    'Random',
+    -- 'npc_dota_hero_medusa',
+    -- 'npc_dota_hero_luna',
+    -- 'npc_dota_hero_sniper',
+    -- 'npc_dota_hero_drow_ranger',
+    -- 'npc_dota_hero_templar_assassin',
+
+    'npc_dota_hero_bristleback',
+    'npc_dota_hero_shredder',
+    'npc_dota_hero_abaddon',
+    'npc_dota_hero_skeleton_king',
+    'npc_dota_hero_centaur',
+
+    -- 'npc_dota_hero_medusa',
+    -- 'npc_dota_hero_medusa',
+    -- 'npc_dota_hero_medusa',
+    -- 'npc_dota_hero_medusa',
+    -- 'npc_dota_hero_medusa',
 }
 
 -- Same notes as above for picking heroes but for the Dire side.
 Customize.Dire_Heros = {
-    'Random',
+    -- tanky heroes
+    -- 'npc_dota_hero_bristleback',
+    -- 'npc_dota_hero_shredder',
+    -- 'npc_dota_hero_abaddon',
+    -- 'npc_dota_hero_skeleton_king',
+    -- 'npc_dota_hero_centaur',
+
+    'npc_dota_hero_luna',
+    'npc_dota_hero_medusa',
+    'npc_dota_hero_sniper',
+    'npc_dota_hero_drow_ranger',
+    'npc_dota_hero_templar_assassin',
+
+    -- 'npc_dota_hero_medusa',
+    -- 'npc_dota_hero_medusa',
+    -- 'npc_dota_hero_medusa',
+    -- 'npc_dota_hero_medusa',
+    -- 'npc_dota_hero_medusa',
 }
 
 --[[
@@ -82,7 +114,7 @@ Customize.Allow_AI_GPT_Response = true
 
 -- Set the level of bots' trash talks. Disable Allow_Trash_Talk can disable this.
 -- 1 => no trash talks from ally bots, no taunt from enemy after it gets a kill. 2 => ally bots also trash talk to you, allow taunt from enemy after it gets a kill.
-Customize.Trash_Talk_Level = 1
+Customize.Trash_Talk_Level = 2
 
 -- To set the names for the Radiant bots. Don't need to provide a value for all 5 bots, missing names will have a Random value.
 Customize.Radiant_Names = {
@@ -106,11 +138,11 @@ Customize.Dire_Team_Name = ''
 -- The desire level that the bots will group up and push the same lane. 
 -- 1 is mild meaning bots will group up only when convenient; 3 is bots will almost always try to push together.
 -- Group pushing may increase the difficulty but can reduce the game experience. 
-Customize.Force_Group_Push_Level = 1
+Customize.Force_Group_Push_Level = 3
 
 -- Set how frequently you want the bots to push. 
 -- 1 is default, bot may choose to farm more in game. 2 is balanced for push vs farm. 3 is almost no farm, all push.
-Customize.Push_Frequency = 1
+Customize.Push_Frequency = 3
 
 -- The Enhanced Fretbots mode settings:
 -- For more about Fretbots mode: https://github.com/forest0xia/dota2bot-OpenHyperAI/discussions/68
