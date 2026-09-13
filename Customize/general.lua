@@ -45,45 +45,84 @@ Customize.Ban = {
 6. Check Appendix to ensure you DO NOT pick more than 1 "weak" heroes in a team for your game experience.
 --]]
 Customize.Radiant_Heros = {
+    -- -- archers
     -- 'npc_dota_hero_medusa',
     -- 'npc_dota_hero_luna',
     -- 'npc_dota_hero_sniper',
     -- 'npc_dota_hero_drow_ranger',
     -- 'npc_dota_hero_templar_assassin',
 
-    'npc_dota_hero_bristleback',
-    'npc_dota_hero_shredder',
-    'npc_dota_hero_abaddon',
-    'npc_dota_hero_skeleton_king',
-    'npc_dota_hero_centaur',
-
-    -- 'npc_dota_hero_medusa',
-    -- 'npc_dota_hero_medusa',
-    -- 'npc_dota_hero_medusa',
-    -- 'npc_dota_hero_medusa',
-    -- 'npc_dota_hero_medusa',
-}
-
--- Same notes as above for picking heroes but for the Dire side.
-Customize.Dire_Heros = {
-    -- tanky heroes
+    -- -- tanks
     -- 'npc_dota_hero_bristleback',
     -- 'npc_dota_hero_shredder',
     -- 'npc_dota_hero_abaddon',
     -- 'npc_dota_hero_skeleton_king',
     -- 'npc_dota_hero_centaur',
 
-    'npc_dota_hero_luna',
-    'npc_dota_hero_medusa',
-    'npc_dota_hero_sniper',
-    'npc_dota_hero_drow_ranger',
-    'npc_dota_hero_templar_assassin',
+    -- 'npc_dota_hero_medusa',
+    -- 'npc_dota_hero_medusa',
+    -- 'npc_dota_hero_medusa',
+    -- 'npc_dota_hero_medusa',
+    -- 'npc_dota_hero_medusa',
+
+    -- -- illusions
+    -- 'npc_dota_hero_phantom_lancer',
+    -- 'npc_dota_hero_naga_siren',
+    -- 'npc_dota_hero_terrorblade',
+    -- 'npc_dota_hero_arc_warden',
+    -- 'npc_dota_hero_chaos_knight',
+
+    -- -- mages
+    -- 'npc_dota_hero_invoker',
+    -- 'npc_dota_hero_enigma',
+    -- 'npc_dota_hero_leshrac',
+    -- 'npc_dota_hero_obsidian_destroyer',
+    -- 'npc_dota_hero_rubick',
+    -- -- 'npc_dota_hero_silencer',
+    -- -- 'npc_dota_hero_zuus',
+    -- -- 'npc_dota_hero_keeper_of_the_light',
+    -- -- 'npc_dota_hero_tinker',
+
+    -- All Spirits/Pandas
+    "npc_dota_hero_void_spirit",
+    "npc_dota_hero_ember_spirit",
+    "npc_dota_hero_brewmaster",
+    "npc_dota_hero_earth_spirit",
+    "npc_dota_hero_storm_spirit",
+}
+
+-- Same notes as above for picking heroes but for the Dire side.
+Customize.Dire_Heros = {
+    -- -- tanks
+    -- 'npc_dota_hero_bristleback',
+    -- 'npc_dota_hero_shredder',
+    -- 'npc_dota_hero_abaddon',
+    -- 'npc_dota_hero_skeleton_king',
+    -- 'npc_dota_hero_centaur',
+
+    -- -- archers
+    -- 'npc_dota_hero_luna',
+    -- 'npc_dota_hero_medusa',
+    -- 'npc_dota_hero_sniper',
+    -- 'npc_dota_hero_drow_ranger',
+    -- 'npc_dota_hero_templar_assassin',
 
     -- 'npc_dota_hero_medusa',
     -- 'npc_dota_hero_medusa',
     -- 'npc_dota_hero_medusa',
     -- 'npc_dota_hero_medusa',
     -- 'npc_dota_hero_medusa',
+
+    -- mages
+    'npc_dota_hero_invoker',
+    'npc_dota_hero_enigma',
+    'npc_dota_hero_leshrac',
+    'npc_dota_hero_obsidian_destroyer',
+    'npc_dota_hero_rubick',
+    -- 'npc_dota_hero_silencer',
+    -- 'npc_dota_hero_zuus',
+    -- 'npc_dota_hero_keeper_of_the_light',
+    -- 'npc_dota_hero_tinker',
 }
 
 --[[
