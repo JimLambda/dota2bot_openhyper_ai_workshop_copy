@@ -37,14 +37,14 @@ Hero.PurchaseList = {
 	"item_boots",
 	"item_sphere",
 	"item_travel_boots",
-	"item_aghanims_shard",
-	"item_ultimate_scepter",
 	"item_octarine_core",
 	"item_wind_waker",
 	"item_bloodstone",
-	"item_travel_boots_2",
-	"item_ultimate_scepter_2",
 	"item_refresher",
+	"item_travel_boots_2",
+	"item_aghanims_shard",
+	"item_ultimate_scepter",
+	"item_ultimate_scepter_2",
 	"item_moon_shard",
 }
 
