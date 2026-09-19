@@ -65,23 +65,23 @@ Customize.Radiant_Heros = {
     -- 'npc_dota_hero_medusa',
     -- 'npc_dota_hero_medusa',
 
-    -- illusions
-    'npc_dota_hero_phantom_lancer',
-    'npc_dota_hero_naga_siren',
-    'npc_dota_hero_terrorblade',
-    'npc_dota_hero_arc_warden',
-    'npc_dota_hero_chaos_knight',
+    -- -- illusions
+    -- 'npc_dota_hero_phantom_lancer',
+    -- 'npc_dota_hero_naga_siren',
+    -- 'npc_dota_hero_terrorblade',
+    -- 'npc_dota_hero_arc_warden',
+    -- 'npc_dota_hero_chaos_knight',
 
-    -- -- mages
-    -- 'npc_dota_hero_invoker',
-    -- 'npc_dota_hero_enigma',
-    -- 'npc_dota_hero_leshrac',
-    -- 'npc_dota_hero_obsidian_destroyer',
-    -- 'npc_dota_hero_rubick',
-    -- -- 'npc_dota_hero_silencer',
-    -- -- 'npc_dota_hero_zuus',
-    -- -- 'npc_dota_hero_keeper_of_the_light',
-    -- -- 'npc_dota_hero_tinker',
+    -- mages
+    'npc_dota_hero_invoker',
+    'npc_dota_hero_enigma',
+    'npc_dota_hero_rubick',
+    'npc_dota_hero_leshrac',
+    'npc_dota_hero_obsidian_destroyer',
+    -- 'npc_dota_hero_silencer',
+    -- 'npc_dota_hero_zuus',
+    -- 'npc_dota_hero_keeper_of_the_light',
+    -- 'npc_dota_hero_tinker',
 
     -- -- All Spirits/Pandas
     -- "npc_dota_hero_void_spirit",
