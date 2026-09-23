@@ -95,8 +95,8 @@ Customize.Radiant_Heros = {
     'npc_dota_hero_lone_druid',
     "npc_dota_hero_void_spirit",
     "npc_dota_hero_earth_spirit",
-    "npc_dota_hero_ember_spirit",
     "npc_dota_hero_storm_spirit",
+    "npc_dota_hero_ember_spirit",
     -- "npc_dota_hero_brewmaster",
 }
 
