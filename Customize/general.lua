@@ -65,13 +65,13 @@ Customize.Radiant_Heros = {
     -- 'npc_dota_hero_medusa',
     -- 'npc_dota_hero_medusa',
 
-    -- illusions
-    'npc_dota_hero_lone_druid',
-    'npc_dota_hero_phantom_lancer',
-    'npc_dota_hero_naga_siren',
-    'npc_dota_hero_terrorblade',
-    'npc_dota_hero_arc_warden',
-    -- 'npc_dota_hero_chaos_knight',
+    -- -- illusions
+    -- 'npc_dota_hero_lone_druid',
+    -- 'npc_dota_hero_phantom_lancer',
+    -- 'npc_dota_hero_naga_siren',
+    -- 'npc_dota_hero_terrorblade',
+    -- 'npc_dota_hero_arc_warden',
+    -- -- 'npc_dota_hero_chaos_knight',
 
     -- -- mages
     -- 'npc_dota_hero_invoker',
@@ -90,6 +90,14 @@ Customize.Radiant_Heros = {
     -- "npc_dota_hero_brewmaster",
     -- "npc_dota_hero_earth_spirit",
     -- "npc_dota_hero_storm_spirit",
+
+    -- Custom lineup.
+    'npc_dota_hero_lone_druid',
+    "npc_dota_hero_void_spirit",
+    "npc_dota_hero_earth_spirit",
+    "npc_dota_hero_ember_spirit",
+    "npc_dota_hero_storm_spirit",
+    -- "npc_dota_hero_brewmaster",
 }
 
 -- Same notes as above for picking heroes but for the Dire side.
