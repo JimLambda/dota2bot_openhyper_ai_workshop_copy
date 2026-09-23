@@ -42,12 +42,12 @@ a.BearItemsList = {
     "item_aghanims_shard",
     "item_moon_shard",
 
-    "item_orb_of_venom",
-    "item_phase_boots",
-    "item_diffusal_blade",
-    "item_desolator",
-    "item_assault",
-    "item_monkey_king_bar",
+    -- "item_orb_of_venom",
+    -- "item_phase_boots",
+    -- "item_diffusal_blade",
+    -- "item_desolator",
+    -- "item_assault",
+    -- "item_monkey_king_bar",
 }
 a.BearItemsMap = {}
 for p, q in ipairs(a.BearItemsList) do
