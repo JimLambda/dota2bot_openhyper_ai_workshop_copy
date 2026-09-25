@@ -553,7 +553,13 @@ function ItemPurchaseThink()
 	E = a:DistanceFromFountain()
 	local ax = GetDroppedItemList()
 	for O, ay in pairs(ax) do
-		if ay ~= nil and ay.owner == a and ay.item ~= nil and not string.find(ay.item:GetName(), "token") and not (a == f.GetLoneDruid(a).hero and a._ldLastDropTime ~= nil and DotaTime() - a._ldLastDropTime < 4) then
+		if ay ~= nil and ay.owner == a and ay.item ~= nil and not string.find(ay.item:GetName(), "token") and not (
+			a == f.GetLoneDruid(a).hero
+			and (
+				(a._ldLastDropTime ~= nil and DotaTime() - a._ldLastDropTime < 4)
+				or (f.GetLoneDruid(a).bearItemsMap ~= nil and f.GetLoneDruid(a).bearItemsMap[ay.item:GetName()])
+			)
+		) then
 			local az = GetUnitToLocationDistance(a, ay.location)
 			if az > 200 and az < 1000 then
 				a:Action_MoveToLocation(ay.location)
@@ -998,8 +1004,8 @@ function ItemPurchaseThink()
 			or a == f.GetLoneDruid(a).hero and f.GetLoneDruid(a).bear ~= nil and c.GetItemTotalWorthInSlots(
 				f.GetLoneDruid(a).bear
 			) < 28000 and c.IsItemInTargetHero(a.currBuyingItemInPurchaseList, f.GetLoneDruid(a).bear)
-			or a.countInvCheck > (GetGameMode() == GAMEMODE_ARDM and 30 or 30)
-			or a.rebuildCount >= 5 and C == 0 and D == 0
+			or (a.countInvCheck > 30 and a.currBuyingItemInPurchaseList ~= "item_ultimate_scepter" and a.currBuyingItemInPurchaseList ~= "item_ultimate_scepter_2" and a.currBuyingItemInPurchaseList ~= "item_aghanims_shard")
+			or (a.rebuildCount >= 5 and C == 0 and D == 0 and a.currBuyingItemInPurchaseList ~= "item_ultimate_scepter" and a.currBuyingItemInPurchaseList ~= "item_ultimate_scepter_2" and a.currBuyingItemInPurchaseList ~= "item_aghanims_shard")
 		then
 			if a.countInvCheck > 0 or a.rebuildCount >= 5 then
 				log(
