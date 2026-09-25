@@ -249,7 +249,7 @@ local function a3()
 			a5 = a5 + 1400 * (1 - a7 / 300)
 		end
 	end
-	if a.currBuyingBasicItem == "item_aghanims_shard" then
+	if a.currBuyingBasicItem == "item_aghanims_shard" and not (a == f.GetLoneDruid(a).hero or f.IsBear(a)) then
 		a.hasBuyShard = false
 		a1()
 		return
@@ -330,7 +330,7 @@ local function aa()
 			a5 = a5 + 1400 * (1 - a7 / 180)
 		end
 	end
-	if a.currBuyingBasicItem == "item_aghanims_shard" then
+	if a.currBuyingBasicItem == "item_aghanims_shard" and not (a == f.GetLoneDruid(a).hero or f.IsBear(a)) then
 		a.hasBuyShard = false
 		a1()
 		return
@@ -553,7 +553,7 @@ function ItemPurchaseThink()
 	E = a:DistanceFromFountain()
 	local ax = GetDroppedItemList()
 	for O, ay in pairs(ax) do
-		if ay ~= nil and ay.owner == a and ay.item ~= nil and not string.find(ay.item:GetName(), "token") then
+		if ay ~= nil and ay.owner == a and ay.item ~= nil and not string.find(ay.item:GetName(), "token") and not (a == f.GetLoneDruid(a).hero and a._ldLastDropTime ~= nil and DotaTime() - a._ldLastDropTime < 4) then
 			local az = GetUnitToLocationDistance(a, ay.location)
 			if az > 200 and az < 1000 then
 				a:Action_MoveToLocation(ay.location)
@@ -780,7 +780,7 @@ function ItemPurchaseThink()
 	then
 		a:ActionImmediate_PurchaseItem("item_blood_grenade")
 	end
-	if not a.hasBuyShard and GetItemStockCount("item_aghanims_shard") > 0 and y >= 1400 then
+	if not a.hasBuyShard and GetItemStockCount("item_aghanims_shard") > 0 and y >= 1400 and not (a == f.GetLoneDruid(a).hero or f.IsBear(a)) then
 		a.hasBuyShard = true
 		a:ActionImmediate_PurchaseItem("item_aghanims_shard")
 	end
@@ -985,9 +985,18 @@ function ItemPurchaseThink()
 		W()
 	end
 	if #a.currBuyingBasicItemList == 0 then
+		local aLdAgh = a == f.GetLoneDruid(a).hero and (a.currBuyingItemInPurchaseList == "item_ultimate_scepter_2" or a.currBuyingItemInPurchaseList == "item_aghanims_shard")
+		local aAlreadyOwned
+		if aLdAgh then
+			aAlreadyOwned = a:FindItemSlot(a.currBuyingItemInPurchaseList) >= 0
+				or (a.currBuyingItemInPurchaseList == "item_ultimate_scepter_2" and a:HasScepter())
+				or (a.currBuyingItemInPurchaseList == "item_aghanims_shard" and a:HasShard())
+		else
+			aAlreadyOwned = c.IsItemInHero(a.currBuyingItemInPurchaseList)
+		end
 		if
-			c.IsItemInHero(a.currBuyingItemInPurchaseList)
-			or a.currBuyingItemInPurchaseList == "item_aghanims_shard"
+			aAlreadyOwned
+			or a.currBuyingItemInPurchaseList == "item_aghanims_shard" and not (a == f.GetLoneDruid(a).hero or f.IsBear(a))
 			or a == f.GetLoneDruid(a).hero and f.GetLoneDruid(a).bear ~= nil and c.GetItemTotalWorthInSlots(
 				f.GetLoneDruid(a).bear
 			) < 28000 and c.IsItemInTargetHero(a.currBuyingItemInPurchaseList, f.GetLoneDruid(a).bear)

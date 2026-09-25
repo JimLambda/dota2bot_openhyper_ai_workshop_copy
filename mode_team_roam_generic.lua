@@ -544,6 +544,7 @@ function Think()
 					local ao = a:GetItemInSlot(an)
 					if ao ~= nil and al[ao:GetName()] and ak.bear:FindItemSlot(ao:GetName()) < 0 then
 						a:Action_DropItem(ao, ak.bear:GetLocation())
+						a._ldLastDropTime = DotaTime()
 						return
 					end
 				end
