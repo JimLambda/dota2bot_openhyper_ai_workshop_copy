@@ -34,7 +34,7 @@ Hero.Enable = true -- CHANGE THIS TO: true
 -- Item internal names in Dota2: https://github.com/forest0xia/dota2bot-OpenHyperAI/discussions/73
 Hero.PurchaseList = {
 	-- purchase bear items first.
-	"item_ultimate_scepter",
+	-- "item_ultimate_scepter",  -- Purchasing this only will cause bugs now.
 	"item_mjollnir",
 	"item_heart",
 	"item_abyssal_blade",

@@ -31,7 +31,7 @@ o["pos_4"] = o["pos_1"]
 o["pos_5"] = o["pos_1"]
 a["sBuyList"] = o[j]
 a.BearItemsList = {
-	"item_ultimate_scepter",
+	-- "item_ultimate_scepter",  -- Purchasing this only will cause bugs now.
 	"item_mjollnir",
 	"item_heart",
 	"item_abyssal_blade",
