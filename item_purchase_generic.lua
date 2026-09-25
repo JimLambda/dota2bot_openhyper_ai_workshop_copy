@@ -985,12 +985,10 @@ function ItemPurchaseThink()
 		W()
 	end
 	if #a.currBuyingBasicItemList == 0 then
-		local aLdAgh = a == f.GetLoneDruid(a).hero and (a.currBuyingItemInPurchaseList == "item_ultimate_scepter_2" or a.currBuyingItemInPurchaseList == "item_aghanims_shard")
+		local aLdAgh = a == f.GetLoneDruid(a).hero and (a.currBuyingItemInPurchaseList == "item_ultimate_scepter" or a.currBuyingItemInPurchaseList == "item_ultimate_scepter_2" or a.currBuyingItemInPurchaseList == "item_aghanims_shard")
 		local aAlreadyOwned
 		if aLdAgh then
-			aAlreadyOwned = a:FindItemSlot(a.currBuyingItemInPurchaseList) >= 0
-				or (a.currBuyingItemInPurchaseList == "item_ultimate_scepter_2" and a:HasScepter())
-				or (a.currBuyingItemInPurchaseList == "item_aghanims_shard" and a:HasShard())
+			aAlreadyOwned = c.GetItemCount(a, a.currBuyingItemInPurchaseList) >= 2
 		else
 			aAlreadyOwned = c.IsItemInHero(a.currBuyingItemInPurchaseList)
 		end

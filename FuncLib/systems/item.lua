@@ -1116,6 +1116,9 @@ function b.IsItemInHero(y)
 	return b.IsItemInTargetHero(y, GetBot())
 end
 function b.IsItemInTargetHero(y, E)
+	if E:GetUnitName() == "npc_dota_hero_lone_druid" and (y == "item_ultimate_scepter" or y == "item_ultimate_scepter_2" or y == "item_aghanims_shard") then
+		return false
+	end
 	if y == "item_double_flask" then
 		return b.IsItemInHero("item_flask")
 	end
@@ -1136,9 +1139,6 @@ function b.IsItemInTargetHero(y, E)
 	end
 	if y == "item_moon_shard" and E:HasModifier("modifier_item_moon_shard_consumed") then
 		return true
-	end
-	if y == "item_ultimate_scepter_2" then
-		return E:HasScepter() and E:FindItemSlot("item_ultimate_scepter") < 0
 	end
 	local H = E:FindItemSlot(y)
 	return H >= 0 and (H <= 8 or b.IsTopItem(y))
