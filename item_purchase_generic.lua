@@ -994,13 +994,19 @@ function ItemPurchaseThink()
 		local aLdAgh = a == f.GetLoneDruid(a).hero and (a.currBuyingItemInPurchaseList == "item_ultimate_scepter" or a.currBuyingItemInPurchaseList == "item_ultimate_scepter_2" or a.currBuyingItemInPurchaseList == "item_aghanims_shard")
 		local aAlreadyOwned
 		if aLdAgh then
-			aAlreadyOwned = c.GetItemCount(a, a.currBuyingItemInPurchaseList) >= 2
+			local bear = f.GetLoneDruid(a).bear
+			if a.currBuyingItemInPurchaseList == "item_aghanims_shard" then
+				aAlreadyOwned = a:HasShard() and (bear == nil or bear:HasShard())
+			else
+				aAlreadyOwned = a:HasScepter() and (bear == nil or bear:HasScepter())
+			end
 		else
 			aAlreadyOwned = c.IsItemInHero(a.currBuyingItemInPurchaseList)
 		end
 		if
 			aAlreadyOwned
 			or a.currBuyingItemInPurchaseList == "item_aghanims_shard" and not (a == f.GetLoneDruid(a).hero or f.IsBear(a))
+			or a.currBuyingItemInPurchaseList == "item_ultimate_scepter_2" and a.purchaseListInReverseOrder["item_ultimate_scepter"] ~= nil
 			or a == f.GetLoneDruid(a).hero and f.GetLoneDruid(a).bear ~= nil and c.GetItemTotalWorthInSlots(
 				f.GetLoneDruid(a).bear
 			) < 28000 and c.IsItemInTargetHero(a.currBuyingItemInPurchaseList, f.GetLoneDruid(a).bear)
