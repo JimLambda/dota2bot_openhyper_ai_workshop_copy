@@ -15,25 +15,23 @@ This is a place for you to customize the Open Hyper AI bots.
 - Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=3246316298
 - Github: https://github.com/forest0xia/dota2bot-OpenHyperAI
 --]]
-
-
 -- The variable to hold the settings. Only modify if you know exactly what you are doing.
-local Customize = { }
+local Customize = {}
 
 -- Set it to true to turn on ALL of the custom settings in this file, or set it to false to turn off the settings.
 Customize.Enable = true
 
--- Set the localization code to make bots speak the specific language when possible (not guaranteed to 100% localized). 
+-- Set the localization code to make bots speak the specific language when possible (not guaranteed to 100% localized).
 -- Currently supprot: "en" for "English", "zh" for "中文", "ru" for Russian, "ja" for Japanese
 -- https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes
 Customize.Localization = "en"
 
 -- To ban some heroes for bots - Set the heroes you DO NOT want the bots to pick. Use hero internal names.
 -- Hero name ref: https://github.com/forest0xia/dota2bot-OpenHyperAI/discussions/71
--- Please note that it is not 100% guaranteed that the banned hero will not be picked; for example if you banned too many heroes 
+-- Please note that it is not 100% guaranteed that the banned hero will not be picked; for example if you banned too many heroes
 -- like near 100% of the heroes, bots will need to randomly pick heroes regardless of the ban list to continue the game.
 Customize.Ban = {
-    'example_npc_dota_hero_internal_name_to_ban',
+	"example_npc_dota_hero_internal_name_to_ban",
 }
 
 --[[
@@ -45,93 +43,93 @@ Customize.Ban = {
 6. Check Appendix to ensure you DO NOT pick more than 1 "weak" heroes in a team for your game experience.
 --]]
 Customize.Radiant_Heros = {
-    -- -- archers
-    -- 'npc_dota_hero_medusa',
-    -- 'npc_dota_hero_luna',
-    -- 'npc_dota_hero_sniper',
-    -- 'npc_dota_hero_drow_ranger',
-    -- 'npc_dota_hero_templar_assassin',
+	-- -- archers
+	-- 'npc_dota_hero_medusa',
+	-- 'npc_dota_hero_luna',
+	-- 'npc_dota_hero_sniper',
+	-- 'npc_dota_hero_drow_ranger',
+	-- 'npc_dota_hero_templar_assassin',
 
-    -- -- tanks
-    -- 'npc_dota_hero_bristleback',
-    -- 'npc_dota_hero_shredder',
-    -- 'npc_dota_hero_abaddon',
-    -- 'npc_dota_hero_skeleton_king',
-    -- 'npc_dota_hero_centaur',
+	-- -- tanks
+	-- 'npc_dota_hero_bristleback',
+	-- 'npc_dota_hero_shredder',
+	-- 'npc_dota_hero_abaddon',
+	-- 'npc_dota_hero_skeleton_king',
+	-- 'npc_dota_hero_centaur',
 
-    -- 'npc_dota_hero_medusa',
-    -- 'npc_dota_hero_medusa',
-    -- 'npc_dota_hero_medusa',
-    -- 'npc_dota_hero_medusa',
-    -- 'npc_dota_hero_medusa',
+	-- 'npc_dota_hero_medusa',
+	-- 'npc_dota_hero_medusa',
+	-- 'npc_dota_hero_medusa',
+	-- 'npc_dota_hero_medusa',
+	-- 'npc_dota_hero_medusa',
 
-    -- -- illusions
-    -- 'npc_dota_hero_lone_druid',
-    -- 'npc_dota_hero_phantom_lancer',
-    -- 'npc_dota_hero_naga_siren',
-    -- 'npc_dota_hero_terrorblade',
-    -- 'npc_dota_hero_arc_warden',
-    -- -- 'npc_dota_hero_chaos_knight',
+	-- -- illusions
+	-- 'npc_dota_hero_lone_druid',
+	-- 'npc_dota_hero_phantom_lancer',
+	-- 'npc_dota_hero_naga_siren',
+	-- 'npc_dota_hero_terrorblade',
+	-- 'npc_dota_hero_arc_warden',
+	-- -- 'npc_dota_hero_chaos_knight',
 
-    -- -- mages
-    -- 'npc_dota_hero_invoker',
-    -- 'npc_dota_hero_enigma',
-    -- 'npc_dota_hero_rubick',
-    -- 'npc_dota_hero_leshrac',
-    -- 'npc_dota_hero_obsidian_destroyer',
-    -- -- 'npc_dota_hero_silencer',
-    -- -- 'npc_dota_hero_zuus',
-    -- -- 'npc_dota_hero_keeper_of_the_light',
-    -- -- 'npc_dota_hero_tinker',
+	-- -- mages
+	-- 'npc_dota_hero_invoker',
+	-- 'npc_dota_hero_enigma',
+	-- 'npc_dota_hero_rubick',
+	-- 'npc_dota_hero_leshrac',
+	-- 'npc_dota_hero_obsidian_destroyer',
+	-- -- 'npc_dota_hero_silencer',
+	-- -- 'npc_dota_hero_zuus',
+	-- -- 'npc_dota_hero_keeper_of_the_light',
+	-- -- 'npc_dota_hero_tinker',
 
-    -- -- All Spirits/Pandas
-    -- "npc_dota_hero_void_spirit",
-    -- "npc_dota_hero_ember_spirit",
-    -- "npc_dota_hero_brewmaster",
-    -- "npc_dota_hero_earth_spirit",
-    -- "npc_dota_hero_storm_spirit",
+	-- -- All Spirits/Pandas
+	-- "npc_dota_hero_void_spirit",
+	-- "npc_dota_hero_ember_spirit",
+	-- "npc_dota_hero_brewmaster",
+	-- "npc_dota_hero_earth_spirit",
+	-- "npc_dota_hero_storm_spirit",
 
-    -- Custom lineup.
-    'npc_dota_hero_lone_druid',
-    "npc_dota_hero_void_spirit",
-    "npc_dota_hero_earth_spirit",
-    "npc_dota_hero_storm_spirit",
-    "npc_dota_hero_ember_spirit",
-    -- "npc_dota_hero_brewmaster",
+	-- Custom lineup.
+	"npc_dota_hero_lone_druid",
+	"npc_dota_hero_void_spirit",
+	"npc_dota_hero_earth_spirit",
+	"npc_dota_hero_storm_spirit",
+	"npc_dota_hero_ember_spirit",
+	-- "npc_dota_hero_brewmaster",
 }
 
 -- Same notes as above for picking heroes but for the Dire side.
 Customize.Dire_Heros = {
-    -- -- tanks
-    -- 'npc_dota_hero_bristleback',
-    -- 'npc_dota_hero_shredder',
-    -- 'npc_dota_hero_abaddon',
-    -- 'npc_dota_hero_skeleton_king',
-    -- 'npc_dota_hero_centaur',
+	-- -- tanks
+	-- 'npc_dota_hero_bristleback',
+	-- 'npc_dota_hero_shredder',
+	-- 'npc_dota_hero_abaddon',
+	-- 'npc_dota_hero_skeleton_king',
+	-- 'npc_dota_hero_centaur',
 
-    -- -- archers
-    -- 'npc_dota_hero_luna',
-    -- 'npc_dota_hero_medusa',
-    -- 'npc_dota_hero_sniper',
-    -- 'npc_dota_hero_drow_ranger',
-    -- 'npc_dota_hero_templar_assassin',
+	-- -- archers
+	-- 'npc_dota_hero_luna',
+	-- 'npc_dota_hero_medusa',
+	-- 'npc_dota_hero_sniper',
+	-- 'npc_dota_hero_drow_ranger',
+	-- 'npc_dota_hero_templar_assassin',
 
-    -- 'npc_dota_hero_medusa',
-    -- 'npc_dota_hero_medusa',
-    -- 'npc_dota_hero_medusa',
-    -- 'npc_dota_hero_medusa',
-    -- 'npc_dota_hero_medusa',
+	-- 'npc_dota_hero_medusa',
+	-- 'npc_dota_hero_medusa',
+	-- 'npc_dota_hero_medusa',
+	-- 'npc_dota_hero_medusa',
+	-- 'npc_dota_hero_medusa',
 
-    -- mages
-    'npc_dota_hero_invoker',
-    'npc_dota_hero_enigma',
-    'npc_dota_hero_leshrac',
-    'npc_dota_hero_obsidian_destroyer',
-    'npc_dota_hero_rubick',
-    -- 'npc_dota_hero_silencer',
-    -- 'npc_dota_hero_zuus',
-    -- 'npc_dota_hero_keeper_of_the_light',
-    -- 'npc_dota_hero_tinker',
+	-- mages
+	"npc_dota_hero_invoker",
+	"npc_dota_hero_enigma",
+	"npc_dota_hero_leshrac",
+	"npc_dota_hero_obsidian_destroyer",
+	"npc_dota_hero_rubick",
+	-- 'npc_dota_hero_silencer',
+	-- 'npc_dota_hero_zuus',
+	-- 'npc_dota_hero_keeper_of_the_light',
+	-- 'npc_dota_hero_tinker',
 }
 
 --[[
@@ -166,13 +164,13 @@ Customize.Trash_Talk_Level = 2
 
 -- To set the names for the Radiant bots. Don't need to provide a value for all 5 bots, missing names will have a Random value.
 Customize.Radiant_Names = {
-    'Random',
-    'Random',
+	"Random",
+	"Random",
 }
 
 -- Same notes as above for setting the bots' names but for the Dire side.
 Customize.Dire_Names = {
-    'Random',
+	"Random",
 }
 
 -- Set to true to show team name tags in bot names (e.g. "LQD.miCKe.OHA"), or false to hide them (e.g. "miCKe.OHA").
@@ -180,15 +178,15 @@ Customize.Show_Team_Names = false
 
 -- Set custom team name tags for each side. Leave as '' to use a random pro team name.
 -- Examples: "TEAM1", "OG", "NAVI", etc.
-Customize.Radiant_Team_Name = ''
-Customize.Dire_Team_Name = ''
+Customize.Radiant_Team_Name = ""
+Customize.Dire_Team_Name = ""
 
--- The desire level that the bots will group up and push the same lane. 
+-- The desire level that the bots will group up and push the same lane.
 -- 1 is mild meaning bots will group up only when convenient; 3 is bots will almost always try to push together.
--- Group pushing may increase the difficulty but can reduce the game experience. 
+-- Group pushing may increase the difficulty but can reduce the game experience.
 Customize.Force_Group_Push_Level = 1
 
--- Set how frequently you want the bots to push. 
+-- Set how frequently you want the bots to push.
 -- 1 is default, bot may choose to farm more in game. 2 is balanced for push vs farm. 3 is almost no farm, all push.
 Customize.Push_Frequency = 1
 
@@ -196,32 +194,25 @@ Customize.Push_Frequency = 1
 -- For more about Fretbots mode: https://github.com/forest0xia/dota2bot-OpenHyperAI/discussions/68
 -- Note: these settings below will override the pre-defind settings in Fretbots folder.
 Customize.Fretbots = {
-    -- Default difficulty, a number between: [0, 10]
-    Default_Difficulty = 2,
-
-    -- Default ally bots bonus scale comparing to enemy bots, a number between: [0, 1]
-    Default_Ally_Scale = 0.5,
-
-    -- Set whether or not allowing the team to vote for difficulty. If false, will directly apply the default difficulty.
-    Allow_To_Vote = true,
-
-    -- Set to false disables all sounds from Fretbots mode
-    Play_Sounds = true,
-
-    -- Set to play chatwheel taunt sounds when human player died
-    Player_Death_Sound = true,
+	-- Default difficulty, a number between: [0, 10]
+	Default_Difficulty = 2,
+	-- Default ally bots bonus scale comparing to enemy bots, a number between: [0, 1]
+	Default_Ally_Scale = 0.5,
+	-- Set whether or not allowing the team to vote for difficulty. If false, will directly apply the default difficulty.
+	Allow_To_Vote = true,
+	-- Set to false disables all sounds from Fretbots mode
+	Play_Sounds = true,
+	-- Set to play chatwheel taunt sounds when human player died
+	Player_Death_Sound = true,
 }
 
 -- Make bots think less, 0: fully think through, 1 to 10: think less and less frequently.
 -- Bots can become slow or dumb in reaction and decision making if you set this value to a higher number.
 -- When doing Local Host, you can potentially improve PC performance (FPS) by setting this to 1 to 10, which sacrifices some bot IQ/performance.
 -- This won't be very effective for FPS improvement because Valve has a lot of compute on their side that your PC have to handle for Local Hosting.
-Customize.ThinkLess = 1;
+Customize.ThinkLess = 1
 
 return Customize
-
-
-
 
 --[[
 
@@ -303,4 +294,5 @@ return Customize
         'npc_dota_hero_elder_titan',
         'npc_dota_hero_hoodwink',
         'npc_dota_hero_wisp',
-]]--
+]]
+--

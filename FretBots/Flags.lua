@@ -1,1 +1,19 @@
-if Flags==nil then Flags={}end;function Flags:Initialize()Flags.isEntityKilledRegistered=false;Flags.isStatsInitialized=false;Flags.isEntityHurtRegistered=false;Flags.isSettingsInitialized=false;Flags.isSettingsFinalized=false;Flags.isDebugBuffed=false;Flags.isPlayerChatRegistered=false;Flags.isFretBotsInitialized=false;Flags.isBonusTimersInitialized=false;Flags.isRoleDeterminationTimerInitialized=false;Flags.isDynamicDifficultyInitialized=false;Flags.isDynamicDifficultyFinalized=false;Flags.isInventoryItemAddedRegistered=false end;Flags:Initialize()
+if Flags == nil then
+	Flags = {}
+end
+function Flags:Initialize()
+	Flags.isEntityKilledRegistered = false
+	Flags.isStatsInitialized = false
+	Flags.isEntityHurtRegistered = false
+	Flags.isSettingsInitialized = false
+	Flags.isSettingsFinalized = false
+	Flags.isDebugBuffed = false
+	Flags.isPlayerChatRegistered = false
+	Flags.isFretBotsInitialized = false
+	Flags.isBonusTimersInitialized = false
+	Flags.isRoleDeterminationTimerInitialized = false
+	Flags.isDynamicDifficultyInitialized = false
+	Flags.isDynamicDifficultyFinalized = false
+	Flags.isInventoryItemAddedRegistered = false
+end
+Flags:Initialize()

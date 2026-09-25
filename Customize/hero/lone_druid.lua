@@ -16,9 +16,8 @@ This is a place for you to customize the Open Hyper AI bots.
 - Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=3246316298
 --]]
 
-
 -- The variable to hold the settings. Only modify if you know exactly what you are doing.
-local Hero = { }
+local Hero = {}
 
 -- Set it to true to turn on ALL of the custom settings in this file, or set it to false to turn off the settings.
 Hero.Enable = true -- CHANGE THIS TO: true
@@ -36,17 +35,17 @@ Hero.Enable = true -- CHANGE THIS TO: true
 Hero.PurchaseList = {
 	-- purchase bear items first.
 	"item_ultimate_scepter",
-    "item_mjollnir",
-    "item_heart",
-    "item_abyssal_blade",
-    "item_monkey_king_bar",
-    "item_butterfly",
-    "item_ultimate_scepter_2",
-    "item_ultimate_scepter_2",
-    "item_disperser",
-    "item_aghanims_shard",
-    "item_aghanims_shard",
-    "item_moon_shard",
+	"item_mjollnir",
+	"item_heart",
+	"item_abyssal_blade",
+	"item_monkey_king_bar",
+	"item_butterfly",
+	"item_ultimate_scepter_2",
+	"item_ultimate_scepter_2",
+	"item_disperser",
+	"item_aghanims_shard",
+	"item_aghanims_shard",
+	"item_moon_shard",
 
 	-- then lone druid's items.
 	"item_boots",

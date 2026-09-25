@@ -1,1 +1,2 @@
-local a={}return a
+local a = {}
+return a
